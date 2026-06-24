@@ -1,0 +1,108 @@
+{
+  "i18n": true,
+  "type": "panel",
+  "items": {
+    "_tabs": {
+      "type": "tabs",
+      "items": {
+        "tabMain": {
+          "type": "panel",
+          "label": "Verbindung & Basis-Einstellungen",
+          "items": {
+            "ip": {
+              "type": "text",
+              "label": "Master IP-Adresse",
+              "sm": 12,
+              "md": 6,
+              "newLine": true
+            },
+            "authHeader": {
+              "type": "text",
+              "label": "Authorization Header (z.B. Basic ...)",
+              "sm": 12,
+              "md": 6
+            },
+            "interval": {
+              "type": "number",
+              "label": "Abfrage-Intervall (in Millisekunden)",
+              "min": 5000,
+              "max": 86400000,
+              "sm": 12,
+              "md": 4,
+              "newLine": true
+            }
+          }
+        },
+        "tabDevices": {
+          "type": "panel",
+          "label": "Eheim Geräte-Liste",
+          "items": {
+            "devices": {
+              "type": "table",
+              "sm": 12,
+              "label": "Vorhandene Geräte konfigurieren",
+              "items": [
+                {
+                  "type": "text",
+                  "attr": "deviceName",
+                  "title": "Gerätename (z.B. Aquarium Licht)",
+                  "width": "40%"
+                },
+                {
+                  "type": "text",
+                  "attr": "macAddress",
+                  "title": "MAC-Adresse (Optional für Zuordnung)",
+                  "width": "40%"
+                },
+                {
+                  "type": "select",
+                  "attr": "deviceType",
+                  "title": "Gerätetyp",
+                  "width": "20%",
+                  "options": [
+                    {
+                      "value": "light",
+                      "title": "LEDcontrol"
+                    },
+                    {
+                      "value": "filter",
+                      "title": "Professionel 5e"
+                    },
+                    {
+                      "value": "heater",
+                      "title": "Thermocontrol+e"
+                    },
+                    {
+                      "value": "phcontrol",
+                      "title": "pHcontrol+e"
+                    },
+                    {
+                      "value": "feeder",
+                      "title": "Autofeeder+"
+                    },
+                    {
+                      "value": "uv",
+                      "title": "ReeflexUV+e"
+                    },
+                    {
+                      "value": "climacontrol",
+                      "title": "Climacontrol+"
+                    },
+                    {
+                      "value": "pump",
+                      "title": "ClassicVARIO+e"
+                    },
+                    {
+                      "value": "alert",
+                      "title": "AquaAlert+e"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

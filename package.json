@@ -1,0 +1,14 @@
+{
+  "name": "iobroker.eheim-digital",
+  "version": "1.0.0",
+  "description": "Reads configuration and live values from Eheim Digital API",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.1.4"
+  },
+  "author": "",
+  "license": "MIT"
+}

@@ -1,0 +1,45 @@
+{
+  "common": {
+    "name": "eheim-digital",
+    "version": "1.0.0",
+    "news": {
+      "1.0.0": {
+        "en": "Initial release supporting all Eheim Digital GET endpoints with Admin UI",
+        "de": "Erstveröffentlichung unterstützt alle Eheim Digital GET-Endpunkte mit Admin-Oberfläche"
+      }
+    },
+    "titleLang": {
+      "en": "Eheim Digital Master Control",
+      "de": "Eheim Digital Gesamtsteuerung"
+    },
+    "desc": {
+      "en": "Reads configuration and live values from all connected Eheim Digital smart devices.",
+      "de": "Liest Konfiguration und Live-Werte von allen verbundenen Eheim Digital Smart-Geräten aus."
+    },
+    "mode": "daemon",
+    "platform": "Javascript/Node.js",
+    "icon": "eheim.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/youruser/ioBroker.eheim-digital/master/admin/eheim.png",
+    "keywords": [
+      "eheim",
+      "aquarium",
+      "api"
+    ],
+    "type": "aquarium",
+    "dependencies": [
+      {
+        "js-controller": ">=5.0.0"
+      }
+    ],
+    "adminUI": {
+      "config": "json"
+    }
+  },
+  "native": {
+    "ip": "192.168.2.131",
+    "authHeader": "Basic PHVzZXJuYW1lPjo8cGFzc3dvcmQ+",
+    "interval": 30000,
+    "devices": []
+  }
+}
