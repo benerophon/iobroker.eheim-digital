@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "eheim-digital",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "news": {
       "1.0.0": {
         "en": "Initial release supporting all Eheim Digital GET endpoints with Admin UI",
