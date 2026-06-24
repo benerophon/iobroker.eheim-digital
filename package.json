@@ -1,6 +1,6 @@
 {
   "name": "iobroker.eheim-digital",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Reads configuration and live values from Eheim Digital API",
   "main": "main.js",
   "scripts": {
